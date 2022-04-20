@@ -1,0 +1,105 @@
+
+body {
+    background-color: #F0F2F5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+#top-content {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 20px 80px 10px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#top-content img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+#top-content .row {
+    width: 100%;
+}
+
+#top-content #name-container {
+    margin-left: 30px;
+    margin-top: 25px;
+    display: block;
+}
+
+#top-content #name-container #name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+}
+
+#top-content #name-container #email {
+    font-size: 20px;
+    color: #999999;
+}
+
+#top-content #image-name {
+    margin-top: 40px;
+    display: flex;
+}
+
+#top-content .col-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#top-content #basic-info {
+    margin-top: 40px;
+}
+
+#top-content #basic-info > div {
+    display: flex;
+    margin: 0 0 10px 200px;
+}
+
+#top-content #basic-info div {
+    margin-left: 30px;
+    min-width: 90px;
+}
+
+#top-content #basic-info .value {
+    margin-bottom: 30px;
+}   
+
+#top-content #basic-info .name {
+    display: block;
+    font-size: 15px;
+    color: #999999;
+}
+
+#top-content #basic-info .value {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #333333;
+}
+
+#top-content span, h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#medical-details {
+    margin: 0 5%;
+}
+
+#medical-details div {
+    padding: 3%;
+    margin-top: 3%;
+    border-radius: 3%;
+    background-color: #FFFFFF;
+}
