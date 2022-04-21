@@ -7,12 +7,14 @@ body {
     color: #333333;
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand';
 }
 
 #top-content {
     display: flex;
     background-color: #FFFFFF;
-    padding: 20px 80px 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-bottom-right-radius: 20px;
@@ -23,41 +25,62 @@ body {
     width: 160px;
     height: 160px;
     border-radius: 50%;
+    margin: auto;
 }
 
-#top-content .row {
+@media screen and (min-width: 768px) {
+    #top-content img {
+        margin: auto 0 auto auto !important;
+    }
+}
+
+#top-content #row {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #top-content #name-container {
-    margin-left: 30px;
-    margin-top: 25px;
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    #top-content #name-container {
+        margin-top: 25px;
+    }
 }
 
 #top-content #name-container #name {
     font-size: 36px;
     font-weight: bold;
     color: #333333;
+    text-align: center;
 }
 
 #top-content #name-container #email {
     font-size: 20px;
     color: #999999;
+    text-align: center;
 }
 
-#top-content #image-name {
-    margin-top: 40px;
+@media screen and (min-width: 768px) {
+    #name, #email {
+        text-align: left !important;
+    }
+}
+
+#top-content #image {
     display: flex;
 }
 
-#top-content .col-auto {
-    margin-right: auto;
-    margin-left: auto;
+#top-content [class^='col-'] {
+    margin: auto;
 }
 
 
 #top-content #basic-info {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -67,8 +90,9 @@ body {
 }
 
 #top-content #basic-info div {
+    display: block;
+    flex-basis: auto;
     margin-left: 30px;
-    min-width: 90px;
 }
 
 #top-content #basic-info .value {
@@ -76,7 +100,6 @@ body {
 }   
 
 #top-content #basic-info .name {
-    display: block;
     font-size: 15px;
     color: #999999;
 }
